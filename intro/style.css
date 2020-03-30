@@ -33,8 +33,10 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
   display:flex;
   /* display:inline-flex; */
-  border: 10px solid goldenrod;
-  min-height:100vh;
+  
+  /* border: 10px solid goldenrod; */
+
+  /* min-height:100vh; */
   /* min height is needed if the content is higher than the height of browser - otherwise content will flow over the div - notice the border if you only use "height"*/
   
   /* ROW */
@@ -58,10 +60,18 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 }
 
-
+/* FLEX ITEM */
 .box {
-  width: 33.3%;
+  flex: 1;
   /* width: calc(33.3% - 20px); */
   /* margin: 10px; */
 }
 
+/* ORDER */
+.box3{
+  order:1;
+}
+.box7{
+  order:-1;
+}
+/* default ORDER: for flex items is ZERO. When you set a particular item 1+ it will put it on the end in that oder - also works neg numbers  */
