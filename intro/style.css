@@ -33,6 +33,20 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
   display:flex;
   /* display:inline-flex; */
-  height:100vh;
   border: 10px solid goldenrod;
+  min-height:100vh;
+  /* min height is needed if the content is higher than the height of browser - otherwise content will flow over the div - notice the border if you only use "height"*/
+  
+  /* ROW */
+  flex-direction: row;
+  /* row is the default flex-direction  Y AXIS ----->*/
+  
+  /* COLUMN */
+  flex-direction: column;
+  /* column is CROSS AXIS ^v top to bottom */
+
+  /* REVERSE */
+  /* flex-direction: column-reverse; */
+  /* flex-direction: row-reverse; */
+  /* reverse swaps the axis */
 }
