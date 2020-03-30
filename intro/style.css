@@ -42,11 +42,26 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   /* row is the default flex-direction  Y AXIS ----->*/
   
   /* COLUMN */
-  flex-direction: column;
+  /* flex-direction: column; */
   /* column is CROSS AXIS ^v top to bottom */
 
   /* REVERSE */
   /* flex-direction: column-reverse; */
   /* flex-direction: row-reverse; */
   /* reverse swaps the axis */
+  
+  flex-wrap: wrap;
+  /* by default flex-wrap is defaulted to NOWRAP */
+  /* if height is defined and the content is larger - it will wrap to a new column next to it */
+  /* flex-wrap: wrap-reverse; */
+  /* reverse the wrap from 1-10 to 10-1 */
+
 }
+
+
+.box {
+  width: 33.3%;
+  /* width: calc(33.3% - 20px); */
+  /* margin: 10px; */
+}
+
