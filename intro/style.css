@@ -9,7 +9,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 /* Some default styles to make each box visible */
 .box {
   color:white;
-  font-size: 100px;
+  font-size: 30px;
   text-align: center;
   text-shadow:4px 4px 0 rgba(0,0,0,0.1);
   padding:10px;
@@ -27,6 +27,17 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .box9 { background:#2ecc71;}
 .box10 { background:#16a085;}
 
+/* ASK YOUR SELF */
+/* ASK YOUR SELF */
+/* ASK YOUR SELF */
+/* ASK YOUR SELF */
+/* WHERE IS MY MAIN AXIS AND CROSS AXIS? */
+/* WHERE IS MY MAIN AXIS AND CROSS AXIS? */
+/* WHERE IS MY MAIN AXIS AND CROSS AXIS? */
+/* WHERE IS MY MAIN AXIS AND CROSS AXIS? */
+/* WHERE IS MY MAIN AXIS AND CROSS AXIS? */
+/* WHERE IS MY MAIN AXIS AND CROSS AXIS? */
+/* WHERE IS MY MAIN AXIS AND CROSS AXIS? */
 
 /* We start writing out flexbox here. The above is just page setup */
 .container {
@@ -34,17 +45,17 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   display:flex;
   /* display:inline-flex; */
   
-  /* border: 10px solid goldenrod; */
+  border: 10px solid goldenrod;
 
-  /* min-height:100vh; */
+  min-height:100vh;
   /* min height is needed if the content is higher than the height of browser - otherwise content will flow over the div - notice the border if you only use "height"*/
   
   /* ROW */
-  flex-direction: row;
+  /* flex-direction: row; */
   /* row is the default flex-direction  Y AXIS ----->*/
   
   /* COLUMN */
-  /* flex-direction: column; */
+  flex-direction: column;
   /* column is CROSS AXIS ^v top to bottom */
 
   /* REVERSE */
@@ -52,26 +63,34 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   /* flex-direction: row-reverse; */
   /* reverse swaps the axis */
   
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* by default flex-wrap is defaulted to NOWRAP */
   /* if height is defined and the content is larger - it will wrap to a new column next to it */
   /* flex-wrap: wrap-reverse; */
   /* reverse the wrap from 1-10 to 10-1 */
 
+
+  /* JUSTIFY CONTENT */
+  /* justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-around; */
+  justify-content: space-between;
+  
 }
 
 /* FLEX ITEM */
-.box {
-  flex: 1;
+/* .box { */
+  /* flex: 1; */
   /* width: calc(33.3% - 20px); */
   /* margin: 10px; */
-}
+/* } */
 
 /* ORDER */
-.box3{
+/* .box3{
   order:1;
 }
 .box7{
   order:-1;
-}
+} */
 /* default ORDER: for flex items is ZERO. When you set a particular item 1+ it will put it on the end in that oder - also works neg numbers  */
