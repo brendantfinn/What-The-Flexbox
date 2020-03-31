@@ -64,7 +64,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   /* reverse swaps the axis */
   
   /* FLEX WRAP */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* by default flex-wrap is defaulted to NOWRAP */
   /* if height is defined and the content is larger - it will wrap to a new column next to it */
   /* flex-wrap: wrap-reverse; */
@@ -81,17 +81,17 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
   /* ALIGN ITEMS */
   /* vertically centers in rows */  
-  /* align-items: flex-start;
-  align-items: flex-end;
-  align-items: baseline;
-  align-items: center; */
+  align-items: flex-start;
+  /* align-items: flex-end; */
+  /* align-items: baseline; */
+  /* align-items: center; */
 
   /* ALIGN CONTENT */
   /* align-content: flex-start; */
   /* align-content: flex-end; */
   /* align-content: space-between; */
   /* align-content: space-around; */
-  align-content: center;
+  /* align-content: center; */
 }
 
 /* FLEX ITEM */
@@ -113,6 +113,15 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 
 
+/* ALIGN SELF - close to ALIGN ITEMS but for flex-items on case to case basis */
+  /* align-self: baseline; */
+  /* align-self: stretch; */
+  /* align-self: flex-start; */
+  /* align-self: flex-end; */
+  /* align-self: center; */
+}
+
+
 /* FLEX ITEM CHANGED TO DEMOSTRATE "ALIGN-ITEMS" */
 /* .box1{
   font-size: 30px;
@@ -130,3 +139,16 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   font-size: 77px;
 } */
 
+
+/* FLEX ITEM TO DEMOSTRATE "ALIGN SELF" */
+.box2{
+  padding-bottom: 200px;
+}
+.box6{
+  padding-bottom: 0;
+  align-self: flex-end;
+}
+.box9{
+  padding-bottom: 50px;
+  align-self: center;
+}
