@@ -46,9 +46,9 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   display:flex;
   /* display:inline-flex; */
   
-  /* border: 10px solid goldenrod; */
+  border: 10px solid goldenrod;
 
-  /* min-height:100vh; */
+  height:100vh;
   /* min height is needed if the content is higher than the height of browser - otherwise content will flow over the div - notice the border if you only use "height"*/
   
   /* ROW */
@@ -56,7 +56,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   /* row is the default flex-direction  Y AXIS ----->*/
   
   /* COLUMN */
-  /* flex-direction: column; */
+  flex-direction: column;
   /* column is CROSS AXIS ^v top to bottom */
 
   /* REVERSE */
@@ -65,7 +65,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   /* reverse swaps the axis */
   
   /* FLEX WRAP */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   /* by default flex-wrap is defaulted to NOWRAP */
   /* if height is defined and the content is larger - it will wrap to a new column next to it */
   /* flex-wrap: wrap-reverse; */
@@ -160,30 +160,31 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 
 /* FLEXBOX SIZING with FLEX preoprty */
-/* .box{
-  flex: 1;
-} */
+.box{
+  /* flex: 1; */
+  flex-basis: 250px;
+  flex-grow: 1;
+  
+}
 /* .box:hover{
   flex: 2;
   font-size: 52px;
 } */
-/* .box2{
-  flex: 2;
-}
 .box2{
-  flex: 2;
-} */
+  flex-grow: 10;
+}
+
 
 
 
 /* FLEX-GROW FLEX-SHRINK FLEX BASIS */
-.box1{
+/* .box1{ */
   /* flex-basis:400px; */
   /* flex-grow:2; */
   /* gives FLEX ITEM TWICE the amount of extra space to this FLEX ITEM*/
   /* flex-shrink:10; */
   
-  flex: 10 5 400px;
+  /* flex: 10 5 400px; */
   /* flex: GROWW SHRINK BASIS */
   
   /* shrinks the item 5x more than box XYZ */
@@ -191,12 +192,12 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   /* flex-grow:1; */
   /* flex:1; is short for flex-grow: 1; */
   /* flex-shrink: ; */
-}
+/* } */
 
-.box2{
+/* .box2{
   flex-basis: 400px;
   flex-grow:1;
   
   flex: 1 1 400px;
   /* flex: GROWW SHRINK BASIS */
-}
+/* }  */
