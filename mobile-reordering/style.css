@@ -109,3 +109,13 @@ section, footer {
   .toggleNav {
     display: block;
   }
+
+  .top{
+    order:2;
+  }
+  .details{
+    order:3;
+  }
+  .signup{
+    order:4;
+  }
